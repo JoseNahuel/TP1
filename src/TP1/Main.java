@@ -66,7 +66,7 @@ public class Main {
         if(objeto5.paridadDelNumero()){
             System.out.println("El numero " + objeto5.getA()+ " es PAR.");
         }else{
-            System.out.printf("El numero " + objeto5.getA()+ " es IMPAR.");
+            System.out.println("El numero " + objeto5.getA()+ " es IMPAR.");
         }
 
 
@@ -79,7 +79,7 @@ public class Main {
         if(objeto6.signoDelNumero()){
             System.out.println("El numero " + objeto6.getB()+ " es POSITIVO.");
         }else{
-            System.out.printf("El numero " + objeto6.getB()+ " es NEGATIVO.");
+            System.out.println("El numero " + objeto6.getB()+ " es NEGATIVO.");
         }
 
 
@@ -89,7 +89,7 @@ public class Main {
         System.out.println("\n--------------------------------------");
         System.out.println("\nEjercicio (7)\n");
 
-        System.out.printf("El numero " +objeto7.getC()+ ":\n");
+        System.out.println("El numero " +objeto7.getC()+ ":");
 
         if(objeto7.signoDelNumero())
             System.out.println("\t->  ES POSITIVO");
@@ -117,21 +117,32 @@ public class Main {
         System.out.println("\n--------------------------------------");
         System.out.println("\nEjercicio (8)\n");
 
-        System.out.printf("Ingrese su nombre:");
+        System.out.println("Ingrese su nombre:");
 
-        Scanner input = new Scanner(System.in);
-        String nombre = input.nextLine();
+        Scanner input1 = new Scanner(System.in);
+        String nombre = input1.nextLine();
 
         Clase8 objeto8 = new Clase8(nombre);
         System.out.println("Buen dia, " + objeto8.getNombre()+ ".");
 
 
+//9
+        System.out.println("\n--------------------------------------");
+        System.out.println("\nEjercicio (9)\n");
+
+        System.out.println("Ingrese un numero entero: ");
+
+        Scanner input2 = new Scanner(System.in);
+        int numero = input2.nextInt();
+
+        Clase9 objeto9 = new Clase9(numero);
+
+        System.out.println("El DOBLE de " +objeto9.getNumero()+ "es: " +objeto9.dobleDelNumero());
+        System.out.println("El TRIPLE de " +objeto9.getNumero()+ "es: " +objeto9.tribleDelNumero());
+
     }
 }
-/*      9. Programa Java que lea un número entero por teclado y calcule el doble y el triple de
-        ese número y lo muestre por pantalla.
-
-        10. Programa que lea una cantidad de grados Fahrenheit y lo convierta a grados
+/*      10. Programa que lea una cantidad de grados Fahrenheit y lo convierta a grados
         centígrados.
 
         11. Programa que lee por teclado el valor del radio de una circunferencia, calcula y
