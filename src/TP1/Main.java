@@ -186,7 +186,7 @@ public class Main {
 
 
 //14
-        System.out.println("\n--------------------------------------");
+        /*System.out.println("\n--------------------------------------");
         System.out.println("\nEjercicio (14)\n");
 
         System.out.println("Ingrese el radio de una esfera: ");
@@ -196,13 +196,21 @@ public class Main {
 
         Clase14 objeto14 = new Clase14(radioEsf);
         System.out.println("El volumen de la esfera de radio "+objeto14.getRadio()+" unidades es de "+objeto14.volumenDeEsfera()+" unidades.");
+*/
 
+//15
+        System.out.println("\n--------------------------------------");
+        System.out.println("\nEjercicio (15)\n");
+
+        Clase15 objeto15 = new Clase15(3,7,8);
+
+        System.out.println("Sean los lados de un triangulo l1: "+objeto15.getLado1()+", l2: "+objeto15.getLado2()+", l3: "+objeto15.getLado3()+". El area de dicho triangulo es: "+objeto15.areDeTriangulo());
 
     }
-}
-/*      15. Programa que calcula el área de un triángulo a partir de la longitud de sus lados.
 
-        16. Programa que lee un número de 3 cifras y muestra sus cifras por separado.
+
+}
+/*      16. Programa que lee un número de 3 cifras y muestra sus cifras por separado.
 
         17. Programa que lea un número entero N de 5 cifras y muestre las cifras que ocupan
         posiciones impares.
