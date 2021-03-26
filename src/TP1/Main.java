@@ -33,6 +33,15 @@ public class Main {
         System.out.println("El valor de la operacion (N*M)/X es: " + objeto2.operacion4());
 
 
+//3
+        Clase3 objeto3 = new Clase3(100);
+
+        System.out.println("\n--------------------------------------");
+        System.out.println("\nEjercicio (3)\n");
+
+        System.out.println("La operacion " + objeto3.getN() + "+77 = " + objeto3.incrementarValor());
+        System.out.println("La operacion " + objeto3.getN() + "-3 = " + objeto3.reducirValor());
+        System.out.println("La operacion " + objeto3.getN() + "*2 = " + objeto3.duplicarValor());
 
     }
 }
