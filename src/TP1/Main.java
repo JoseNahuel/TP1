@@ -1,14 +1,14 @@
 package TP1;
 
 import jdk.swing.interop.SwingInterOpUtils;
-
 import java.util.Scanner;
-
 import static java.lang.Math.PI;
 
 public class Main {
 
     public static void main(String[] args) {
+
+        boolean flag;// variable que se usará en los do-while
 
 //1
         Clase1 objeto1 = new Clase1(2,5.6,'n');
@@ -116,7 +116,7 @@ public class Main {
 
 
 //8
-        /*System.out.println("\n--------------------------------------");
+        System.out.println("\n--------------------------------------");
         System.out.println("\nEjercicio (8)\n");
 
         System.out.println("Ingrese su nombre:");
@@ -126,10 +126,10 @@ public class Main {
 
         Clase8 objeto8 = new Clase8(nombre);
         System.out.println("Buen dia, " + objeto8.getNombre()+ ".");
-*/
+
 
 //9
-        /*System.out.println("\n--------------------------------------");
+        System.out.println("\n--------------------------------------");
         System.out.println("\nEjercicio (9)\n");
 
         System.out.println("Ingrese un numero entero: ");
@@ -141,7 +141,7 @@ public class Main {
 
         System.out.println("El DOBLE de " +objeto9.getNumero()+ "es: " +objeto9.dobleDelNumero());
         System.out.println("El TRIPLE de " +objeto9.getNumero()+ "es: " +objeto9.tribleDelNumero());
-*/
+
 
 //10
         System.out.println("\n--------------------------------------");
@@ -153,7 +153,7 @@ public class Main {
 
 
 //11
-        /*System.out.println("\n--------------------------------------");
+        System.out.println("\n--------------------------------------");
         System.out.println("\nEjercicio (11)\n");
 
         System.out.println("Ingrese el radio de una circunferencia: ");
@@ -165,7 +165,7 @@ public class Main {
 
         System.out.println("El perimetro de la circunferencia de radio "+objeto11.getRadio()+" unidades es de "+objeto11.perimetroCircunferencia()+" unidades.");
         System.out.println("El area de la circunferencia de radio "+objeto11.getRadio()+" unidades es de "+objeto11.areaCircunferencia()+" unidades.");
-*/
+
 
 //12
         System.out.println("\n--------------------------------------");
@@ -186,7 +186,7 @@ public class Main {
 
 
 //14
-        /*System.out.println("\n--------------------------------------");
+        System.out.println("\n--------------------------------------");
         System.out.println("\nEjercicio (14)\n");
 
         System.out.println("Ingrese el radio de una esfera: ");
@@ -196,7 +196,7 @@ public class Main {
 
         Clase14 objeto14 = new Clase14(radioEsf);
         System.out.println("El volumen de la esfera de radio "+objeto14.getRadio()+" unidades es de "+objeto14.volumenDeEsfera()+" unidades.");
-*/
+
 
 //15
         System.out.println("\n--------------------------------------");
@@ -208,7 +208,7 @@ public class Main {
 
 
 //16
-        /*System.out.println("\n--------------------------------------");
+        System.out.println("\n--------------------------------------");
         System.out.println("\nEjercicio (16)\n");
 
         boolean flag;
@@ -231,13 +231,12 @@ public class Main {
         Clase16 objeto16 = new Clase16(numero3cifras);
 
         System.out.println("\nPrimera cifra: "+objeto16.primeraCifra()+"\nSegunda cifra: "+objeto16.cifraDelMedio()+"\nTercera cifra: "+objeto16.ultimaCifra());
-*/
+
 
 //17
         System.out.println("\n--------------------------------------");
         System.out.println("\nEjercicio (17)\n");
 
-        boolean flag;
         int numero5cifras;
 
         do{
@@ -259,9 +258,36 @@ public class Main {
         System.out.println("\nPrimera cifra: "+objeto17.primeraPosicion()+"\nTercera cifra: "+objeto17.terceraPosicion()+"\nQuinta  cifra: "+objeto17.quintaPosicion());
 
 
+//18
+        System.out.println("\n--------------------------------------");
+        System.out.println("\nEjercicio (18)\n");
+
+        Scanner input7 = new Scanner(System.in);
+        int hora,min,sec;
+
+        do{
+            System.out.println("Ingrese HORAS, MINUTOS y SEGUNDOS:\n");
+
+            System.out.printf("Hora: ");
+            hora = input7.nextInt();
+
+            System.out.printf("Minutos: ");
+            min = input7.nextInt();
+
+            System.out.printf("Segundos: ");
+            sec = input7.nextInt();
+
+            Clase18 objeto18 = new Clase18(hora,min,sec);
+
+            if(objeto18.validarHora()){
+                flag=false;
+                System.out.println("\nLa hora ingresada es "+objeto18.getH()+":"+objeto18.getM()+":"+objeto18.getS());
+            }else{
+                System.out.println("\nLa hora "+objeto18.getH()+":"+objeto18.getM()+":"+objeto18.getS()+" es invalida.\n");
+                flag=true;
+            }
+        }while(flag);
+
+        System.out.println("\n--------------------------------------");
     }
-
-
 }
-/*18.Programa que lea tres números enteros H, M, S que contienen hora, minutos y
-segundos respectivamente, y comprueba si la hora que indican es una hora válida.*/
