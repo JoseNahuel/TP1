@@ -211,7 +211,6 @@ public class Main {
         System.out.println("\n--------------------------------------");
         System.out.println("\nEjercicio (16)\n");
 
-        boolean flag;
         int numero3cifras;
 
         do{
