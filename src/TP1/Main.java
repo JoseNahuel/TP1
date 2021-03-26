@@ -206,13 +206,39 @@ public class Main {
 
         System.out.println("Sean los lados de un triangulo l1: "+objeto15.getLado1()+", l2: "+objeto15.getLado2()+", l3: "+objeto15.getLado3()+". El area de dicho triangulo es: "+objeto15.areDeTriangulo());
 
+
+//16
+        System.out.println("\n--------------------------------------");
+        System.out.println("\nEjercicio (16)\n");
+
+        boolean flag;
+        int numero3cifras;
+
+        do{
+            System.out.println("Ingrese un numero de 3 cifras: ");
+
+            Scanner input5 = new Scanner(System.in);
+            numero3cifras = input5.nextInt();
+
+            if(numero3cifras<100 || numero3cifras>999) {
+                System.out.println("Numero invalido");
+                flag = true;
+            }else{
+                flag = false;
+            }
+        }while(flag);
+
+        Clase16 objeto16 = new Clase16(numero3cifras);
+
+        System.out.println("\nPrimera cifra: "+objeto16.primeraCifra()+"\nSegunda cifra: "+objeto16.cifraDelMedio()+"\nTercera cifra: "+objeto16.ultimaCifra());
+
+
+
     }
 
 
 }
-/*      16. Programa que lee un número de 3 cifras y muestra sus cifras por separado.
-
-        17. Programa que lea un número entero N de 5 cifras y muestre las cifras que ocupan
+/*      17. Programa que lea un número entero N de 5 cifras y muestre las cifras que ocupan
         posiciones impares.
 
         18.Programa que lea tres números enteros H, M, S que contienen hora, minutos y
