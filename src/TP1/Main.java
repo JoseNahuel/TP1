@@ -151,7 +151,7 @@ public class Main {
 
 
 //11
-        System.out.println("\n--------------------------------------");
+        /*System.out.println("\n--------------------------------------");
         System.out.println("\nEjercicio (11)\n");
 
         System.out.println("Ingrese el radio de una circunferencia: ");
@@ -163,11 +163,22 @@ public class Main {
 
         System.out.println("El perimetro de la circunferencia de radio "+objeto11.getRadio()+" unidades es de "+objeto11.perimetroCircunferencia()+" unidades.");
         System.out.println("El area de la circunferencia de radio "+objeto11.getRadio()+" unidades es de "+objeto11.areaCircunferencia()+" unidades.");
+*/
+
+//12
+        System.out.println("\n--------------------------------------");
+        System.out.println("\nEjercicio (12)\n");
+
+        Clase12 objeto12 = new Clase12(100);
+
+        System.out.println(objeto12.getKmH()+" km/h = "+objeto12.pasajeKmHaMS()+" m/s.");
+
+
+
+
     }
 }
-/*      12. Programa que pase una velocidad en Km/h a m/s. La velocidad se lee por teclado.
-
-        13. Programa que lea la longitud de los catetos de un triángulo rectángulo y calcule la
+/*      13. Programa que lea la longitud de los catetos de un triángulo rectángulo y calcule la
         longitud de la hipotenusa según el teorema de Pitágoras.
 
         14. Programa que calcula el volumen de una esfera.
