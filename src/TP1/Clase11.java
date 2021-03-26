@@ -10,7 +10,7 @@ import static java.lang.Math.pow;
 
 public class Clase11 {
 
-    private double radio;
+    protected double radio;
 
     public Clase11(double radio){
         this.radio = radio;
