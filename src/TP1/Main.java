@@ -9,7 +9,8 @@ public class Main {
 //1
         Clase1 objeto1 = new Clase1(2,5.6,'n');
 
-        System.out.println("Ejercicio (1)\n");
+        System.out.println("\n--------------------------------------");
+        System.out.println("\nEjercicio (1)\n");
 
         System.out.println("El valor del entero es: " + objeto1.getN());
         System.out.println("El valor del double es: " + objeto1.getA());
@@ -21,14 +22,21 @@ public class Main {
 
 
 //2
+        Clase2 objeto2 = new Clase2(3,7,9.7,3.2);
+
+        System.out.println("\n--------------------------------------");
+        System.out.println("\nEjercicio (2)\n");
+
+        System.out.println("El valor de la operacion X+Y*N-M es: " + objeto2.operacion1());
+        System.out.println("El valor de la operacion N+M*Y*X es: " + objeto2.operacion2());
+        System.out.println("El valor de la operacion (M+X)*(Y+N) es: " + objeto2.operacion3());
+        System.out.println("El valor de la operacion (N*M)/X es: " + objeto2.operacion4());
+
+
 
     }
 }
-/*      2. Programa java que realice lo siguiente: declarar dos variables X e Y de tipo int, dos
-        variables N y M de tipo double y asigna a cada una un valor. A continuación mostrar
-        por pantalla una serie de operaciones entre ellas.
-
-        3. Programa Java que declare una variable entera N, asignarle un valor. A continuación
+/*      3. Programa Java que declare una variable entera N, asignarle un valor. A continuación
         escribe las instrucciones que realicen lo siguiente: incrementar N en 77, reducir su
         valor a 3, duplicar su valor.
 
