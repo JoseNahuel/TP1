@@ -150,13 +150,22 @@ public class Main {
         System.out.println("El equivalente de "+objeto10.getGradosF()+"°F ne celcius es de "+objeto10.pasarAGradosCentigrados()+"°C");
 
 
+//11
+        System.out.println("\n--------------------------------------");
+        System.out.println("\nEjercicio (11)\n");
 
+        System.out.println("Ingrese el radio de una circunferencia: ");
+
+        Scanner input3 = new Scanner(System.in);
+        double radio = input3.nextDouble();
+
+        Clase11 objeto11 = new Clase11(radio);
+
+        System.out.println("El perimetro de la circunferencia de radio "+objeto11.getRadio()+" unidades es de "+objeto11.perimetroCircunferencia()+" unidades.");
+        System.out.println("El area de la circunferencia de radio "+objeto11.getRadio()+" unidades es de "+objeto11.areaCircunferencia()+" unidades.");
     }
 }
-/*      11. Programa que lee por teclado el valor del radio de una circunferencia, calcula y
-        muestra por pantalla la longitud y el área de la circunferencia.
-
-        12. Programa que pase una velocidad en Km/h a m/s. La velocidad se lee por teclado.
+/*      12. Programa que pase una velocidad en Km/h a m/s. La velocidad se lee por teclado.
 
         13. Programa que lea la longitud de los catetos de un triángulo rectángulo y calcule la
         longitud de la hipotenusa según el teorema de Pitágoras.
