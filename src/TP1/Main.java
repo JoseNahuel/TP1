@@ -79,18 +79,42 @@ public class Main {
         }else{
             System.out.printf("El numero " + objeto6.getB()+ " es NEGATIVO.");
         }
-        
 
 
+//7
+        Clase7 objeto7 = new Clase7(-25);
+
+        System.out.println("\n--------------------------------------");
+        System.out.println("\nEjercicio (7)\n");
+
+        System.out.printf("El numero " +objeto7.getC()+ ":\n");
+
+        if(objeto7.signoDelNumero())
+            System.out.println("\t->  ES POSITIVO");
+        else
+            System.out.println("\t->  ES NEGATIVO");
+
+        if(objeto7.paridadDelNumero())
+            System.out.println("\t->  ES PAR");
+        else System.out.println("\t->  ES IMPAR");
+
+        if(objeto7.multiploDeCinco())
+            System.out.println("\t->  ES MULTIPLO DE 5");
+        else System.out.println("\t->  NO MULTIPLO DE 5");
+
+        if(objeto7.multiploDeDiez())
+            System.out.println("\t->  ES MULTIPLO DE 10");
+        else System.out.println("\t->  NO ES MULTIPLO DE 10");
+
+        if(objeto7.mayorQueCien())
+            System.out.println("\t->  ES MAYOR QUE 100");
+        else System.out.println("\t->  NO ES MAYOR QUE 100");
 
 
 
     }
 }
-/*      7. Programa Java que declare una variable C de tipo entero y asignarle un valor. A
-        continuación mostrar un mensaje indicando si el valor de C es positivo o negativo,
-        si es par o impar, si es múltiplo de 5, si es múltiplo de 10 y si es mayor o menor que
-        100.
+/*
 
         8. Programa Java que lea un nombre y muestre por pantalla:
         “Buenos días, {NOMBRE}”.
