@@ -55,12 +55,23 @@ public class Main {
         System.out.println("Los valores FINALES son    ->  A=" +objeto4.getA()+ " , B= " +objeto4.getB()+ " , C= " +objeto4.getC()+ " , D= " +objeto4.getD());
 
 
+//5
+        Clase5 objeto5 = new Clase5(11);
+
+        System.out.println("\n--------------------------------------");
+        System.out.println("\nEjercicio (5)\n");
+
+        if(objeto5.paridadDelNumero()){
+            System.out.println("El numero " + objeto5.getA()+ " es PAR.");
+        }else{
+            System.out.printf("El numero " + objeto5.getA()+ " es IMPAR.");
+        }
+
+
+
     }
 }
-/*      5. Programa Java que declare una variable A de tipo entero, asignarle un valor. A
-        continuación mostrar un mensaje indicando si A es par o impar.
-
-        6. Programa Java que declare una variable B de tipo entero y asignarle un valor. A
+/*      6. Programa Java que declare una variable B de tipo entero y asignarle un valor. A
         continuación mostrar un mensaje indicando si el valor de B es positivo o negativo.
 
         7. Programa Java que declare una variable C de tipo entero y asignarle un valor. A
