@@ -68,13 +68,26 @@ public class Main {
         }
 
 
+//6
+        Clase6 objeto6 = new Clase6(-11);
+
+        System.out.println("\n--------------------------------------");
+        System.out.println("\nEjercicio (6)\n");
+
+        if(objeto6.signoDelNumero()){
+            System.out.println("El numero " + objeto6.getB()+ " es POSITIVO.");
+        }else{
+            System.out.printf("El numero " + objeto6.getB()+ " es NEGATIVO.");
+        }
+        
+
+
+
+
 
     }
 }
-/*      6. Programa Java que declare una variable B de tipo entero y asignarle un valor. A
-        continuación mostrar un mensaje indicando si el valor de B es positivo o negativo.
-
-        7. Programa Java que declare una variable C de tipo entero y asignarle un valor. A
+/*      7. Programa Java que declare una variable C de tipo entero y asignarle un valor. A
         continuación mostrar un mensaje indicando si el valor de C es positivo o negativo,
         si es par o impar, si es múltiplo de 5, si es múltiplo de 10 y si es mayor o menor que
         100.
