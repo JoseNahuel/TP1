@@ -2,6 +2,8 @@ package TP1;
 
 import jdk.swing.interop.SwingInterOpUtils;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -111,15 +113,22 @@ public class Main {
         else System.out.println("\t->  NO ES MAYOR QUE 100");
 
 
+//8
+        System.out.println("\n--------------------------------------");
+        System.out.println("\nEjercicio (8)\n");
+
+        System.out.printf("Ingrese su nombre:");
+
+        Scanner input = new Scanner(System.in);
+        String nombre = input.nextLine();
+
+        Clase8 objeto8 = new Clase8(nombre);
+        System.out.println("Buen dia, " + objeto8.getNombre()+ ".");
+
 
     }
 }
-/*
-
-        8. Programa Java que lea un nombre y muestre por pantalla:
-        “Buenos días, {NOMBRE}”.
-
-        9. Programa Java que lea un número entero por teclado y calcule el doble y el triple de
+/*      9. Programa Java que lea un número entero por teclado y calcule el doble y el triple de
         ese número y lo muestre por pantalla.
 
         10. Programa que lea una cantidad de grados Fahrenheit y lo convierta a grados
