@@ -114,7 +114,7 @@ public class Main {
 
 
 //8
-        System.out.println("\n--------------------------------------");
+        /*System.out.println("\n--------------------------------------");
         System.out.println("\nEjercicio (8)\n");
 
         System.out.println("Ingrese su nombre:");
@@ -124,10 +124,10 @@ public class Main {
 
         Clase8 objeto8 = new Clase8(nombre);
         System.out.println("Buen dia, " + objeto8.getNombre()+ ".");
-
+*/
 
 //9
-        System.out.println("\n--------------------------------------");
+        /*System.out.println("\n--------------------------------------");
         System.out.println("\nEjercicio (9)\n");
 
         System.out.println("Ingrese un numero entero: ");
@@ -139,13 +139,21 @@ public class Main {
 
         System.out.println("El DOBLE de " +objeto9.getNumero()+ "es: " +objeto9.dobleDelNumero());
         System.out.println("El TRIPLE de " +objeto9.getNumero()+ "es: " +objeto9.tribleDelNumero());
+*/
+
+//10
+        System.out.println("\n--------------------------------------");
+        System.out.println("\nEjercicio (10)\n");
+
+        Clase10 objeto10 = new Clase10(100);
+
+        System.out.println("El equivalente de "+objeto10.getGradosF()+"°F ne celcius es de "+objeto10.pasarAGradosCentigrados()+"°C");
+
+
 
     }
 }
-/*      10. Programa que lea una cantidad de grados Fahrenheit y lo convierta a grados
-        centígrados.
-
-        11. Programa que lee por teclado el valor del radio de una circunferencia, calcula y
+/*      11. Programa que lee por teclado el valor del radio de una circunferencia, calcula y
         muestra por pantalla la longitud y el área de la circunferencia.
 
         12. Programa que pase una velocidad en Km/h a m/s. La velocidad se lee por teclado.
