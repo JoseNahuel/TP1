@@ -208,7 +208,7 @@ public class Main {
 
 
 //16
-        System.out.println("\n--------------------------------------");
+        /*System.out.println("\n--------------------------------------");
         System.out.println("\nEjercicio (16)\n");
 
         boolean flag;
@@ -231,16 +231,37 @@ public class Main {
         Clase16 objeto16 = new Clase16(numero3cifras);
 
         System.out.println("\nPrimera cifra: "+objeto16.primeraCifra()+"\nSegunda cifra: "+objeto16.cifraDelMedio()+"\nTercera cifra: "+objeto16.ultimaCifra());
+*/
 
+//17
+        System.out.println("\n--------------------------------------");
+        System.out.println("\nEjercicio (17)\n");
+
+        boolean flag;
+        int numero5cifras;
+
+        do{
+            System.out.println("Ingrese un numero de 5 cifras: ");
+
+            Scanner input6 = new Scanner(System.in);
+            numero5cifras = input6.nextInt();
+
+            if(numero5cifras<10000 || numero5cifras>99999) {
+                System.out.println("Numero invalido");
+                flag = true;
+            }else{
+                flag = false;
+            }
+        }while(flag);
+
+        Clase17 objeto17 = new Clase17(numero5cifras);
+
+        System.out.println("\nPrimera cifra: "+objeto17.primeraPosicion()+"\nTercera cifra: "+objeto17.terceraPosicion()+"\nQuinta  cifra: "+objeto17.quintaPosicion());
 
 
     }
 
 
 }
-/*      17. Programa que lea un número entero N de 5 cifras y muestre las cifras que ocupan
-        posiciones impares.
-
-        18.Programa que lea tres números enteros H, M, S que contienen hora, minutos y
-        segundos respectivamente, y comprueba si la hora que indican es una hora válida.
-*/
+/*18.Programa que lea tres números enteros H, M, S que contienen hora, minutos y
+segundos respectivamente, y comprueba si la hora que indican es una hora válida.*/
