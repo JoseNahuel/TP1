@@ -43,17 +43,21 @@ public class Main {
         System.out.println("La operacion " + objeto3.getN() + "-3 = " + objeto3.reducirValor());
         System.out.println("La operacion " + objeto3.getN() + "*2 = " + objeto3.duplicarValor());
 
+
+//4
+        Clase4 objeto4 = new Clase4(1,3,5,7);
+
+        System.out.println("\n--------------------------------------");
+        System.out.println("\nEjercicio (4)\n");
+
+        System.out.println("Los valores INICIALES son  ->  A=" +objeto4.getA()+ " , B= " +objeto4.getB()+ " , C= " +objeto4.getC()+ " , D= " +objeto4.getD());
+        objeto4.intercambiarValores();
+        System.out.println("Los valores FINALES son    ->  A=" +objeto4.getA()+ " , B= " +objeto4.getB()+ " , C= " +objeto4.getC()+ " , D= " +objeto4.getD());
+
+
     }
 }
-/*      3. Programa Java que declare una variable entera N, asignarle un valor. A continuación
-        escribe las instrucciones que realicen lo siguiente: incrementar N en 77, reducir su
-        valor a 3, duplicar su valor.
-
-        4. Programa java que declare cuatro variables enteras A, B, C y D y asignarle un valor a
-        cada una. A continuación realiza las instrucciones necesarias para que: B tome el
-        valor de C, C tome el valor de A, A tome el valor de D, D tome el valor de B.
-
-        5. Programa Java que declare una variable A de tipo entero, asignarle un valor. A
+/*      5. Programa Java que declare una variable A de tipo entero, asignarle un valor. A
         continuación mostrar un mensaje indicando si A es par o impar.
 
         6. Programa Java que declare una variable B de tipo entero y asignarle un valor. A
