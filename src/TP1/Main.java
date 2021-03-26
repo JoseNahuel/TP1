@@ -174,14 +174,18 @@ public class Main {
         System.out.println(objeto12.getKmH()+" km/h = "+objeto12.pasajeKmHaMS()+" m/s.");
 
 
+//13
+        System.out.println("\n--------------------------------------");
+        System.out.println("\nEjercicio (13)\n");
+
+        Clase13 objeto13 = new Clase13(2,2);
+
+        System.out.println("Sea c1: "+objeto13.getCateto1()+" y c2: "+objeto13.getCateto2()+". La hipotenusa del triangulo cuyos lados son c1 y c2 es: "+objeto13.calculoDeHipotenusa());
 
 
     }
 }
-/*      13. Programa que lea la longitud de los catetos de un triángulo rectángulo y calcule la
-        longitud de la hipotenusa según el teorema de Pitágoras.
-
-        14. Programa que calcula el volumen de una esfera.
+/*      14. Programa que calcula el volumen de una esfera.
 
         15. Programa que calcula el área de un triángulo a partir de la longitud de sus lados.
 
